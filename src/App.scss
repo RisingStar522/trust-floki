@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Feature{
+  background: rgba(128, 69, 254, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 56px rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(22px);
+  border-radius: 10px;
+  max-width: 290px !important;
+}
+.slick-dots li.slick-active button:before{
+  color: #4B73FE !important;
+}
+.slick-dots li button:before{
+  color: #C4C4C4;
+}
+.slick-dots{
+  position: relative;
+  top: 40px;
+}
+.webWallet{
+  background: rgba(128, 69, 254, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  backdrop-filter: blur(142px);
+  border-radius: 10px;
+}
+.floki{
+  background: linear-gradient(180deg, #8045FE 0%, #1B3EB8 100%);
+  border-radius: 9px 0px 0px 9px;
+}
+.flokiMobile{
+  background: linear-gradient(180deg, #8045FE 0%, #1B3EB8 100%);
+  border-radius: 9px 9px 9px 9px;
+}
+.partner{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-sizing: border-box;
+  backdrop-filter: blur(9px);
+  border-radius: 5px;
+}
+.hoverZoom{
+  transition: transform .2s;
+}
+.hoverZoom:hover{
+  transform: scale(1.05);
+}
+
+/*--------------- Mobile Media Query -----------------*/
+@media all and (max-width:1290px){
+  .navMedia, .btnMedia{
+    display: none;
+  }
+  .mobileMenu{
+    display: block;
+  }
+}
+@media all and (max-width:550px){
+  .mobileLogo{
+    margin-left: 50px;
+  }
+  .mobileMenu{
+    margin-right: 50px;
+  }
+}
+@media all and (max-width:1001px){
+  .webHead{
+    display: none;
+  }
+  .mobileHead{
+    display: block;
+  }
+  .webSlide{
+    display: none;
+  }
+  .mobileSlide{
+    display: block;
+  }
+  .FeaturesDev{
+    padding: 0px;
+  }
+  .webWallet{
+    display: none;
+  }
+  .mobileWallet{
+    display: block;
+  }
+  .burningMobile{
+    text-align: center;
+  }
+  .webPartner{
+    display: none;
+  }
+  .mobilePartner{
+    display: block;
+  }
+}
+@media all and (max-width:1140px){
+  .webTokenomics{
+    display: none;
+  }
+  .mobileTokenomics{
+    display: block;
+  }
+}
+@media all and (max-width:1198px){
+  .webRoadmap{
+    display: none;
+  }
+  .mobileRoadmap{
+    display: block;
+  }
+}
+@media all and (max-width:778px){
+  .webFooter{
+    display: none;
+  }
+  .mobileFooter{
+    display: block;
+  }
+}
